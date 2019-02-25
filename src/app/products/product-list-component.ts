@@ -6,8 +6,12 @@ import { Component } from '@angular/core';
 })
 export class ProductListComponent {
     pageTitle = 'Product List';
+// tslint:disable-next-line: no-inferrable-types
     imageWidth: number = 50;
+// tslint:disable-next-line: no-inferrable-types
     imageMargin: number = 2;
+// tslint:disable-next-line: no-inferrable-types
+    showImage: boolean = false;
 
     products: any[] = [
         {
@@ -61,4 +65,8 @@ export class ProductListComponent {
           'imageUrl': 'https://openclipart.org/image/300px/svg_to_png/120337/xbox-controller_01.png'
         }
       ];
+
+      toggleImage(): void {
+        this.showImage = !this.showImage;
+      }
 }
