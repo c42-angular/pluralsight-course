@@ -96,4 +96,8 @@ export class ProductListComponent implements OnInit {
         return this.products.filter((p: IProduct) => 
           p.productName.toLocaleLowerCase().indexOf(filterBy) !== -1);
       }
+
+      onRatingClicked(message: string): void {
+        this.pageTitle = 'Product List: ' + message;
+      }
 }
