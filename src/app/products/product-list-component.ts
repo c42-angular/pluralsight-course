@@ -6,12 +6,11 @@ import { Component } from '@angular/core';
 })
 export class ProductListComponent {
     pageTitle = 'Product List';
-// tslint:disable-next-line: no-inferrable-types
+// tslint:disable: no-inferrable-types
     imageWidth: number = 50;
-// tslint:disable-next-line: no-inferrable-types
     imageMargin: number = 2;
-// tslint:disable-next-line: no-inferrable-types
     showImage: boolean = false;
+    filterText: string = 'cart';
 
     products: any[] = [
         {
